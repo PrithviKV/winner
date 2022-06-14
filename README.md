@@ -1,3 +1,11 @@
+Instructions to run this program:
+
+This is a command line application. It accepts 3 arguments
+start_year
+end_year
+category
+ for ex; You can execute this program in your terminal with
+         $ruby main.rb 2000 2020 chemistry
 
 Testing:
 
