@@ -15,3 +15,7 @@ To install Rspec do the following
 
   you can run test using
   $ rspec spec
+
+  Note from the programmer:
+  I really enjoyed doing this assignment.
+  
