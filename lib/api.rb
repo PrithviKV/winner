@@ -11,7 +11,7 @@ module Api
       res = Net::HTTP.get_response(uri)
       res_body = res.body if res.is_a?(Net::HTTPSuccess)
     rescue => e
-      puts "API call Failed with an error: " + e
+      puts "API call Failed with an error: #{e} "
     end
     return res_body
   end
@@ -24,7 +24,7 @@ module Api
       res = Net::HTTP.get_response(uri)
       res_body = res.body if res.is_a?(Net::HTTPSuccess)
     rescue => e
-      puts "API call Failed with an error: " + e
+      puts "API call Failed with an error: #{e}"
     end
     return res_body
   end

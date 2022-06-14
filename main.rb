@@ -1,8 +1,10 @@
 require 'json'
 require_relative 'lib/api'
+require_relative 'lib/report'
 
 module Main
   include Api
+  include Report
 
   CATEGORIES = ["chemistry", "physics", "peace", "literature", "medicine", "economics"]
   API_RESP_LIMIT = 5
@@ -80,11 +82,11 @@ module Main
       a = awards_array.flatten
       winners_array = get_winners_data(start_year, end_year, a)
       w = winners_array.flatten
-
+      result = Report.result(start_year, end_year, a, w)
     else
       return
     end
-
+    puts result
   end
 
 end
